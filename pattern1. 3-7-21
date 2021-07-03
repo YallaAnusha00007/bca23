@@ -1,0 +1,22 @@
+import java.util,*;
+class pattern
+{
+    scanner scan=new
+    scanner(system.in)
+    system,out.println("enterthe number of row")
+     int .row=scan.nextInt()
+     int i,j;
+     i=1;
+     while(i<=rows)
+     {
+     j=1;
+     while(j<=i)
+     {
+      system.out.print((char)(i+64))
+      j++;
+     }
+      i++;
+         system.out.println();
+       }
+    }
+}
