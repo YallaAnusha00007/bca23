@@ -1,0 +1,35 @@
+//PROGRAM TO FIND MINIMUM ARRAY OF THE GIVEN ELEMENTS
+import java.util.*;
+class minarr
+{
+ public static void main(String args[])
+ {
+  Scanner in=new Scanner(System.in);
+  int n;
+  System.out.println("Enter size of the array:");
+  n=in.nextInt();
+  int a[]=new int[n];
+  System.out.println("Enter the elements of array:");
+  for(int i=0;i<n;i++)
+  {
+    a[i]=in.nextInt();
+  }
+  Arrays.sort(a);
+  System.out.println("Minimum number is" +a[0]);
+ }
+}
+
+
+OUTPUT:
+
+
+D:\anu>java minarr
+Enter size of the array:
+5
+Enter the elements of array:
+12
+34
+56
+78
+90
+Minimum number is12
