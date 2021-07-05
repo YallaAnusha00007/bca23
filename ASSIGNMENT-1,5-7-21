@@ -1,0 +1,52 @@
+
+@@ -0,0 +1,60 @@
+//TO PRINT THE DUPLICATE VALUES IN THE PROGRAM
+import java.util.*;
+class duparr
+{ 
+ static void display(int a[],int n)
+ {
+  for(int i=0;i<n;i++)
+  {
+   for(int j=i+1;j<n;j++)
+   {
+
+      if(a[i]==(a[j]))
+      System.out.println("Duplicate array is:"+a[j]);
+    }
+   }
+ }
+ public static void main(String args[])
+ {
+  Scanner in=new Scanner(System.in);
+  int n;
+  System.out.println("Enter size of the array:");
+  n=in.nextInt();
+  int a[]=new int[n];
+  System.out.println("Enter the elements of the array:");
+  for(int i=0;i<n;i++)
+  {
+   a[i]=in.nextInt();
+  }
+ display(a,n);
+ }    
+}
+
+
+  OUTPUT
+
+D:\ANU>java duparr
+Enter size of the array:
+9
+Enter the elements of the array:
+1
+2
+3
+2
+5
+6
+7
+4
+6
+Duplicate array is:2
+Duplicate array is:6
