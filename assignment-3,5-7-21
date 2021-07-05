@@ -1,0 +1,70 @@
+//PROGRAM TO PRINT ALL ZERO'S  AT THE END
+import java.util.*;
+class lastzarr
+{ 
+ static void display(int a[],int n)
+ {
+  int count=0;
+  int temp;
+  for(int i=0;i<n;i++)
+  {
+   if(a[i]!=0)
+   {
+   temp=a[count];
+   a[count]=a[i];
+   a[i]=temp;
+   count=count+1;
+  }
+  }
+ }
+ static void print(int a[],int n)
+ {
+  for(int i=0;i<n;i++)
+   System.out.println(a[i]+ " ");
+ }
+  public static void main(String args[])
+ {
+  Scanner in=new Scanner(System.in);
+  int n,count=0;
+  int temp;
+  System.out.println("Enter size of the array:");
+  n=in.nextInt();
+  int a[]=new int[n];
+  System.out.println("Enter the elements of the array:");
+  for(int i=0;i<n;i++)
+  {
+   a[i]=in.nextInt();    
+  }
+  System.out.println("print the elements:");
+  display(a,n);
+  print(a,n);
+  
+ }
+}
+
+
+OUTPUt
+
+D:\anu>java lastzarr
+Enter size of the array:
+9
+Enter the elements of the array:
+9
+0
+6
+6
+30
+2
+0
+1
+4
+print the elements:
+9
+6
+6
+30
+2
+1
+4
+0
+0
