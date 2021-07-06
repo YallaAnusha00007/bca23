@@ -1,0 +1,97 @@
+//PRODUCT OF MINIMUM AND MAXIMUM NUMBER OF THE ARRAY
+import java.util.*;
+class pminmaxarr
+{
+ public static void main(String args[])
+ {
+  Scanner in=new Scanner(System.in);
+  int n,m;
+  System.out.println("Enter size of the first array:");
+  n=in.nextInt();
+  System.out.println("Enter size of the second array:");
+  m=in.nextInt();
+  int a[]=new int[n];
+  int b[]=new int[m];
+  System.out.println("Enter the elements of the first matrix:");
+  for(int i=0;i<n;i++)
+  {
+   a[i]=in.nextInt();
+  }
+  System.out.println("Enter the elements of the second matrix:");
+  for(int j=0;j<m;j++)
+  {
+    b[j]=in.nextInt();
+  }
+  int max=a[0];
+  int min=b[0];
+  for(int i=0;i<n;i++)
+  {
+   if(a[i]>max)
+   {
+    max=a[i];
+   }
+  }
+  for(int j=0;j<m;j++)
+  {
+   if(b[j]<min)
+   {
+    min=b[j];
+   }
+  }
+  System.out.println("Maximum value is:"+max);
+  System.out.println("Minimum value is:"+min);
+  int product=0;
+  product=min*max;
+  System.out.println("Product value is:"+product);
+ }
+}
+
+
+
+java -cp /tmp/08zCxSU9AK pminmaxarr
+Enter size of the first array:
+5
+Enter size of the second array:
+5
+Enter the elements of the first matrix:
+5
+7
+9
+3
+6
+Enter the elements of the second matrix:
+1
+2
+6
+-1
+0
+Maximum value is:9
+Minimum value is:-1
+Product value is:-9
+java -cp /tmp/08zCxSU9AK pminmaxarr
+
+Enter size of the first array:
+8
+Enter size of the second array:
+8
+Enter the elements of the first matrix:
+100
+23
+5678
+99
+34
+12
+68
+23
+Enter the elements of the second matrix:
+10
+76
+99
+67
+89
+34
+20
+78
+Maximum value is:5678
+Minimum value is:20
+Product value is:-113560
