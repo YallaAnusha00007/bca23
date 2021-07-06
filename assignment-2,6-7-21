@@ -46,7 +46,7 @@ class pminmaxarr
  }
 }
 
-
+out put
 
 java -cp /tmp/08zCxSU9AK pminmaxarr
 Enter size of the first array:
