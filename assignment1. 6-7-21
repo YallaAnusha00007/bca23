@@ -1,0 +1,41 @@
+
+import java.util.*;
+class array1
+{
+    public static void main(String arg[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int size,i;
+        System.out.print("Enter array size:");
+        size=sc.nextInt();
+        int ar[];
+        ar=new int[size];
+        System.out.print("Enter array elements:");
+        for(i=0;i<size;i++)
+        {
+            ar[i]=sc.nextInt();
+            }
+            Arrays.sort(ar);
+            System.out.println("Minimum element is:" +ar[0]);
+            System.out.print("Maximum element is:" +ar[size-1]);
+        }
+    }
+out put
+Enter size of the array:
+6
+Enter no of the elements:
+3
+2
+1
+56
+10000
+167
+Minimum value is:1
+Maximum value is:10000
+Enter array size:4
+Enter array elements:5
+8
+0
+4
+Minimum element is:0
+Maximum element is:8
