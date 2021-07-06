@@ -18,10 +18,7 @@ class Solution
 }
 
 out put
-
-
-
-
+java -cp /tmp/08zCxSU9AK pminmaxarr
 For Input:
 4
 1 2 3 4
