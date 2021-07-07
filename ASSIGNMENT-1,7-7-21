@@ -58,3 +58,19 @@ Enter the elements:
 Sum of even number:20
 Sum of odd numbers:16
 Product is even:320
+java -cp /tmp/95ftaa1uYp seomeo
+Enter the size:
+9
+Enter the elements:
+11
+12
+13
+14
+15
+16
+17
+18
+19
+Sum of even number:60
+Sum of odd numbers:75
+Product is even:4500
