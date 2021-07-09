@@ -1,0 +1,47 @@
+//PALINDROME NUMBER
+import java.util.*;
+class palindrome
+{
+    public static void main(String args[])
+    {
+        String o, r= "";
+        Scanner in = new Scanner(System.in);
+
+        System.out.print("Enter a string : ");
+        o= in.nextLine();
+
+        int length = o.length();
+
+        for (int i = length - 1; i >= 0; i--)
+        {
+            r = r + o.charAt(i);
+        }
+
+        if (o.equals(r))
+            System.out.println("Entered string is a palindrome.");
+        else
+            System.out.println("Entered string is not a palindrome.");
+    }
+}
+
+
+OUPUT:
+java -cp /tmp/e6rueWP1HO palindrome
+Enter a string : anusha
+Entered string is not a palindrome.
+
+java -cp /tmp/e6rueWP1HO palindro
+Enter a string : madam
+Entered string is a palindrome.
+
+java -cp /tmp/e6rueWP1HO palindrome
+Enter a string : sravya
+Entered string is not a palindrome.
+
+java -cp /tmp/e6rueWP1HO palindrome
+Enter a string : amma
+Entered string is a palindrome.
+
+java -cp /tmp/e6rueWP1HO palindrome
+Enter a string : dad
+Entered string is a palindrome.
