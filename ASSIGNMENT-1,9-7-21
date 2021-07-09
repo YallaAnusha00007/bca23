@@ -1,0 +1,52 @@
+//NUMBER ,LOWERASE LETTERS ,UPPERCASE LETTER ,SPECIAL DIGITS EQUALS TO EACHOTHER
+import java.io.*;
+class strsld
+{
+ public static void main(String args[])throws Exception
+ {
+   BufferedReader in=new BufferedReader(new InputStreamReader(System.in));
+   String s;
+   s=in.readLine();
+   int upper = 0, lower = 0, number = 0, special = 0;
+   for(int i = 0; i < s.length(); i++)
+   {
+    char c=s.charAt(i);
+    if (c>='A'&&c<= 'Z')
+       upper++;
+    else if (c>='a'&&c<= 'z')
+       lower++;
+    else if (c>='0'&&c<= '9')
+       number++;
+    else
+      special++;
+   }
+   System.out.println("Lower case letters : " + lower);
+   System.out.println("Upper case letters : " + upper);
+   System.out.println("Number : " + number);
+   System.out.println("Special characters : " + special);
+   if(lower==upper)
+    System.out.println("YES");
+    else if(upper==number)
+      System.out.println("YES");
+    else if(number==special)
+       System.out.println("YES");
+   else
+    System.out.println("NO");
+ }
+}
+
+OUTPUT
+java -cp /tmp/e6rueWP1HO strsld
+ANUSHA@
+Lower case letters : 0
+Upper case letters : 6
+Number : 0
+Special characters : 1
+NO
+java -cp /tmp/e6rueWP1HO strsld
+@HImy12$
+Lower case letters : 2
+Upper case letters : 2
+Number : 2
+Special characters : 2
+YES
