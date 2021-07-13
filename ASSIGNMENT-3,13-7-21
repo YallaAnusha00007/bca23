@@ -1,0 +1,25 @@
+class aditya {
+    static int factorial(int n)
+    {
+        if (n == 0)
+            return 1;
+  
+        return n * factorial(n - 1);
+    }
+    public static void main(String[] args)
+    {
+        int num = 8;
+        System.out.println("Factorial of " + num
+                           + " is " + factorial(8));
+    }
+}
+
+output
+java -cp /tmp/TsblX2wVEx aditya
+Factorial of 8 is 40320
+
+java -cp /tmp/TsblX2wVEx aditya
+Factorial of 5 is 120
+
+java -cp /tmp/TsblX2wVEx aditya
+Factorial of 7 is 5040
