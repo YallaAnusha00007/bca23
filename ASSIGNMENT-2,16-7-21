@@ -1,0 +1,46 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+import java.util.*;
+class frame
+{
+ public static void main(String[] args)
+ {
+  Scanner in=new Scanner(System.in);
+  System.out.println("Enter n value");
+  int n;
+  ArrayList<Integer>a=new ArrayList<Integer>();
+  n=in.nextInt();
+  System.out.println("Enter values:");
+  for(int i=0;i<n;i++)
+  {
+   int value;
+   value=in.nextInt();
+   a.add(value);
+  }
+  System.out.println("Enter value to search");
+  int k=in.nextInt();
+  if(a.contains(k))
+  {
+   System.out.println("Element found");
+   a.remove(Integer.valueOf(k));
+   System.out.println( a);
+  }
+  else
+  {
+  System.out.println("Element Not Found");
+  }
+ }
+}
+
+out put
+
+java -cp /tmp/FdCWBCnSVi frame
+Enter n value
+5
+Enter values:
+10 20 30 40 50
+Enter value to search
+30
+Element found
+[10, 20, 40, 50]
