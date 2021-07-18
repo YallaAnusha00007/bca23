@@ -1,0 +1,39 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code onl
+//HASHSET IN LEETCODE
+class MyHashSet {
+ HashSet<Integer>MyHashSet;
+    /** Initialize your data structure here. */
+    public MyHashSet() {
+        MyHashSet=new HashSet<Integer>();
+    }
+    
+    public void add(int key) {
+        MyHashSet.add(key);
+    }
+    
+    public void remove(int key) {
+        MyHashSet.remove(key);
+    }
+    
+    /** Returns true if this set contains the specified element */
+    public boolean contains(int key) {
+        MyHashSet obj=new MyHashSet();
+        obj.add(key);
+        obj.remove(key);
+        return MyHashSet.contains(key);
+    }
+}
+
+/**
+ * Your MyHashSet object will be instantiated and called as such:
+ * MyHashSet obj = new MyHashSet();
+ * obj.add(key);
+ * obj.remove(key);
+ * boolean param_3 = obj.contains(key);
+ */
+ 
+ 
+ [11:35 AM, 7/18/2021] Anusha: java -cp /tmp/DPAxZTry5K Main
+[11:36 AM, 7/18/2021] Anusha: ["MyHashSet","add","add","contains","contains","add","contains","remove","contains"] [[],[1],[2],[1],[3],[2],[2],[2],[2]]
+[11:36 AM, 7/18/2021] Anusha: [null,null,null,true,false,null,true,null,false]
