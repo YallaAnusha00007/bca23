@@ -1,0 +1,20 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+//DONE IN GEEKSFORGEEKS
+ class Solution{
+    static int map(int n, String keys[], int arr[], String s)
+    {
+        
+        HashMap<String, Integer> mp = new HashMap<>();
+        for(int i = 0;i < n;i++)
+            mp.put(keys[i], arr[i]);
+        if(mp.containsKey(s))
+            return mp.get(s);
+        return -1;
+    }
+}
+
+out put:
+java -cp /tmp/DPAxZTry5K Main
+3sak 5 varun 7 vijay 3sak
+5
