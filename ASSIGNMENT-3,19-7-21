@@ -1,0 +1,24 @@
+import java.util.*; 
+class repeathashset
+{ 
+ public static void main(String args[])
+ { 
+  HashMap<Integer,Integer> x=new HashMap<Integer,Integer>(); 
+  int[] arr={9,8,6,6,2,4,6,3,2,1,9,6,7,6,5,3,5,3,9,9};
+  int i; 
+  for(i=0;i<arr.length;i++)
+  { 
+   int key;
+   key=arr[i];
+   if(x.containsKey(key)) 
+    x.put(key,x.get(key)+1); 
+   else
+    x.put(arr[i],1);
+  }
+  System.out.println(x); 
+ }
+}
+
+out put:
+java -cp /tmp/EdLyBN6EIR repeathashset
+{1=1, 2=2, 3=3, 4=1, 5=2, 6=5, 7=1, 8=1, 9=4}
