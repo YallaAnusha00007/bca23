@@ -1,0 +1,33 @@
+class Solution {
+    public int[] intersection(int[] nums1, int[] nums2) {
+        HashSet<Integer> s=new HashSet<>();
+        HashSet<Integer> h=new HashSet<>();
+        for(int i:nums1){
+            s.add(i);
+        }
+        int count=0;
+        for(int i:nums2){
+            if(s.contains(i)){
+                if(!h.contains(i)){
+                    h.add(i);
+                    count++;
+                }
+            }
+        }
+        int arr[]=new int[count];
+        int a=0;
+        for(int i:h){
+            arr[a]=i;
+            a++;
+        }
+        return arr;
+    }
+}
+
+Output:
+javac /tmp/yFTkr1mtKj/Result.java
+  nums1 = [1,2,2,1], nums2 = [2,2]
+    [2]
+javac /tmp/yFTkr1mtKj/Result.java
+ nums1 = [4,9,5], nums2 = [9,4,9,8,4]
+   [9,4]
