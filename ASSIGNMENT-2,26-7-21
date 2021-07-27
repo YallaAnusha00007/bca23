@@ -1,0 +1,18 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+class Solution 
+{
+    public int trailingZeroes(int n)
+    {
+                int count=0;
+        for(int i=5;n/i>=1;i*=5){
+            count+=n/i;
+        }
+        return count;
+    }
+}
+out put:
+javac /tmp/yFTkr1mtKj/Result.java
+3
+Output
+0
