@@ -1,3 +1,6 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
 import java.io.*;
 import java.util.*;
 import java.util.Scanner;
@@ -53,3 +56,15 @@ java -cp /tmp/y6ApAX8vWu Solution
 6
 2
 0
+java -cp /tmp/L6gLNNQWi2 Solution
+5
+1  10
+4
+2  10
+3
+4  6
+1
+3  5
+0
+100  102
+1
