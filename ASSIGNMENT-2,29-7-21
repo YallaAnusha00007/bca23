@@ -1,0 +1,37 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code oline
+import java.util.*;
+class PrimeFactors
+{
+ public static void main(String args[])
+ {
+  Scanner in=new Scanner(System.in);
+  int n=in.nextInt();
+  int sum=0;
+  while(n%2==0)
+  {
+   System.out.print("2"+" ");
+   n=n/2;
+  }
+  for(int i=3;i<Math.sqrt(n);i+=2)
+  {
+   while(n%i==0)
+   {
+    System.out.print(i+" ");
+    n=n/i;
+   }
+  }
+  if(n>2)
+  System.out.print(n);
+  
+  for(int i=0;i<n;i++)
+   sum+=i;
+  System.out.println("\ntotal:"+sum);
+ }
+}
+
+0ut put:
+java -cp /tmp/jUQQlaINzl PrimeFactors
+30
+2 3 5
+total:10
