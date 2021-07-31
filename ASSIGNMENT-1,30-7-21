@@ -1,0 +1,65 @@
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.*;
+class TestClass {
+    public static void main(String args[] ) throws Exception {
+        /* Sample code to perform I/O:
+         * Use either of these methods for input
+
+        //BufferedReader
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String name = br.readLine();                // Reading input from STDIN
+        System.out.println("Hi, " + name + ".");    // Writing output to STDOUT
+
+        //Scanner
+        Scanner s = new Scanner(System.in);
+        String name = s.nextLine();                 // Reading input from STDIN
+        System.out.println("Hi, " + name + ".");    // Writing output to STDOUT
+
+        */
+
+        // Write your code here
+    
+     BufferedReader br=new BufferedReader(new InputStreamReader(System.in)) ;
+	int n=100000;
+	int prime[]=new int[n+1];
+	for(int i=0;i<=n;i++)
+		{
+			prime[i]=1;
+		}
+		prime[1]=0;
+		for(int p=2;p*p<=n;p++)
+		{
+			if(prime[p]==1)
+			for(int i=p*p;i<=n;i=i+p)
+			{
+				if(prime[i]==1)
+				prime[i]=0;
+			}
+		}
+		int q=Integer.parseInt(br.readLine());
+		while(q>0)
+		{
+			int flag=0;
+			int cakeweight=Integer.parseInt(br.readLine());
+			for(int i=2;i<=cakeweight/2;i++)
+			{
+				if((prime[i]==1)&&(prime[cakeweight-i]==1))
+				{
+					flag=1;
+					break;
+				}
+			}
+			if(flag==1)
+			System.out.println("Deepa");
+			else
+			System.out.println("Arjit");
+			q--;
+		}
+	}
+}
+out put:
+java -cp /tmp/kr11Fqw389 TestClass
+5
+4
+Deepa
