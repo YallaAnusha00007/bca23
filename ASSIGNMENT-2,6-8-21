@@ -1,0 +1,27 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+class Solution
+{
+    public int maxSubArray(int[] nums)
+    {
+        if(nums.length == 1) return nums[0];
+int i = 0, sum = 0, maxValue = Integer.MIN_VALUE;
+while(i < nums.length)
+{
+  if(sum < 0)
+  {
+  sum = nums[i];
+ }
+ else 
+{
+ sum += nums[i];
+}
+i++;
+maxValue = Math.max(maxValue, sum);
+ }
+return maxValue;
+    }
+}
+out put:
+nums = [4,5,0,-2,-3,1], k = 5
+    7
