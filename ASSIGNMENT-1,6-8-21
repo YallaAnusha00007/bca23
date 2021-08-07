@@ -1,33 +1,23 @@
-// Online Java Compiler
-// Use this editor to write, compile and run your Java code online
-import java.io.*;
-class Solution 
+class Solution {
+    public int maxSubArray(int[] nums) {
+        if(nums.length == 1) return nums[0];
+int i = 0, sum = 0, maxValue = Integer.MIN_VALUE;
+while(i < nums.length) {
+  if(sum < 0) {
+  sum = nums[i];
+ }
+ else 
 {
-    public int subarraysDivByK(int[] nums, int k)
-    {
-     int count=0;
-        int prefix=0; 
-        int rem; HashMap<Integer,Integer> dic = new HashMap<Integer,Integer>(); 
-        dic.put(0,1); 
-        int n=nums.length;
-        for(int i=0;i<n;i++) 
-        {
-            prefix = prefix+nums[i]; 
-            rem= prefix%k; 
-            if(rem<0) 
-                rem=rem+k; if(dic.containsKey(rem))
-                { 
-                    count= count+dic.get(rem); 
-                    dic.put(rem,dic.get(rem)+1);
-                } 
-            else 
-            { 
-                dic.put(rem,1); 
-            } } 
-        return count;
-    } 
+ sum += nums[i];
 }
+i++;
+maxValue = Math.max(maxValue, sum);
+ }
+return maxValue;
+    }
+}
+
 out put:
-java -cp /tmp/IPMdCMI6Cl aditya
+
 nums = [-2,1,-3,4,-1,2,1,-5,4]
       6
