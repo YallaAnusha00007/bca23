@@ -23,5 +23,6 @@ return maxValue;
     }
 }
 out put:
+java -cp /tmp/IPMdCMI6Cl aditya
 nums = [4,5,0,-2,-3,1], k = 5
     7
