@@ -28,5 +28,6 @@ class Solution
     } 
 }
 out put:
+java -cp /tmp/IPMdCMI6Cl aditya
 nums = [-2,1,-3,4,-1,2,1,-5,4]
       6
