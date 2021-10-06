@@ -1,0 +1,30 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+class Main
+{
+    // Function to find the nth Fibonacci number
+    public static int fib(int n)
+    {
+        if (n <= 1) {
+            return n;
+        }
+ 
+        return fib(n - 1) + fib(n - 2);
+    }
+ 
+    public static void main(String[] args)
+    {
+        int n = 8;
+ 
+        System.out.println("F(n) = " + fib(n));
+    }
+}
+
+out put
+
+java -cp /tmp/dWd6do919i Main
+F(n) = 21java -cp /tmp/dWd6do919i Main
+java -cp /tmp/dWd6do919i Main
+F(n) = 21
+F(n) = 21
